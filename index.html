@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLX Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="logo">OLX Clone</h1>
+        
+    <nav id="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sell.html">Sell</a></li>
+            <li id="cart-link"><a href="cart.html">Cart</a></li>
+            <li id="category-link">
+                <a href="#">Category</a>
+                <ul id="category-menu" class="hidden">
+                    <li><a href="#" data-category="cars">Cars</a></li>
+                    <li><a href="#" data-category="bikes">Bikes</a></li>
+                    <li><a href="#" data-category="mobiles">Mobiles</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div id="account-options">
+        <button onclick="window.location.href='signup.html'">Sign Up</button>
+        <button onclick="window.location.href='login.html'">Log In</button>
+    </div>
+    </header>
+    <div id="content">
+        <p>Welcome to OLX Clone!</p>
+        <p>Discover the best deals on cars, electronics, bikes, mobiles, and more.</p>
+    </div>
+    <div id="content">
+        <h2>Electronic Products</h2>
+
+        
+        <div class="products-container">
+            <div class="product">
+                <img src="p1.jpg" alt="car">
+                <p class="product-name">Car</p>
+                <p class="product-price">$1,000,000</p>
+                <button class="add-to-cart" data-name="Car" data-price="$1,000,000" data-img="p1.jpg">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="p2.jpg" alt="Audi">
+                <p class="product-name">Audi</p>
+                <p class="product-price">$150,000</p>
+                <button class="add-to-cart" data-name="Audi" data-price="$150,000" data-img="p2.jpg">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="p3.jpg" alt="Pulsar">
+                <p class="product-name">Pulsar</p>
+                <p class="product-price">$15,000</p>
+                <button class="add-to-cart" data-name="Pulsar" data-price="$15,000" data-img="p3.jpg">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="p4.jpg" alt="Laptop">
+                <p class="product-name">Laptop</p>
+                <p class="product-price">$12,000</p>
+                <button class="add-to-cart" data-name="Laptop" data-price="$12,000" data-img="p4.jpg">Add to Cart</button>
+            </div>
+            
+            <div class="product">
+                <img src="p5.jpg" alt="iPhone">
+                <p class="product-name">iPhone</p>
+                <p class="product-price">$16,000</p>
+                <button class="add-to-cart" data-name="iPhone" data-price="$16,000" data-img="p5.jpg">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="p6.jpg" alt="HP Laptop">
+                <p class="product-name">HP Laptop</p>
+                <p class="product-price">$190,000</p>
+                <button class="add-to-cart" data-name="HP Laptop" data-price="$190,000" data-img="p6.jpg">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Add more product entries as needed -->
+    </div>
+    <section id="cars" class="hidden">
+        <h2>Cars</h2>
+        <div class="products-container">
+            <!-- Car products go here -->
+            <div class="product">
+                <img src="p1.jpg" alt="car">
+                <p class="product-name">Car</p>
+                <p class="product-price">$1,000,000</p>
+                <button class="add-to-cart" data-name="Car" data-price="$1,000,000" data-img="p1.jpg">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="p2.jpg" alt="Audi">
+                <p class="product-name">Audi</p>
+                <p class="product-price">$150,000</p>
+                <button class="add-to-cart" data-name="Audi" data-price="$150,000" data-img="p2.jpg">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="p1.jpg" alt="car">
+                <p class="product-name">Car</p>
+                <p class="product-price">$1,000,000</p>
+                <button class="add-to-cart" data-name="Car" data-price="$1,000,000" data-img="p1.jpg">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="mobiles" class="hidden">
+        <h2>Mobile Phones</h2>
+        <div class="products-container">
+            <div class="product">
+                <img src="p5.jpg" alt="iPhone">
+                <p class="product-name">iPhone</p>
+                <p class="product-price">$16,000</p>
+                <button class="add-to-cart" data-name="iPhone" data-price="$16,000" data-img="p5.jpg">Add to Cart</button>
+            </div>
+            <div class="products-container">
+                <div class="product">
+                    <img src="i5.jpg" alt="vivo">
+                    <p class="product-name">vivo</p>
+                    <p class="product-price">$11,000</p>
+                    <button class="add-to-cart" data-name="vivo" data-price="$11,000" data-img="i5.jpg">Add to Cart</button>
+                </div>
+                <div class="products-container">
+                    <div class="product">
+                        <img src="i6.jpg" alt="redmi">
+                        <p class="product-name">redmi</p>
+                        <p class="product-price">$10,000</p>
+                        <button class="add-to-cart" data-name="redmi" data-price="$10,000" data-img="i6.jpg">Add to Cart</button>
+                    </div>
+            <!-- Mobile phone products go here -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Product</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS for styling the sell.html page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .sell-container {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px 0px #000;
+        }
+        h1 {
+            text-align: center;
+            color: #fdf8f8;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="number"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        textarea {
+            height: 100px;
+        }
+        input[type="file"] {
+            margin-top: 10px;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+        #image-preview {
+            text-align: center;
+            margin-top: 20px;
+        }
+        #image-preview img {
+            max-width: 100%;
+            max-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="logo">Sell Your Product</h1>
+        <nav id="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Sell</a></li>
+                <li id="cart-link"><a href="cart.html">Cart</a></li>
+                <li id="category-link">
+                    <a href="#">Category</a>
+                    <ul id="category-menu" class="hidden">
+                        <li><a href="#" data-category="cars">Cars</a></li>
+                        <li><a href="#" data-category="bikes">Bikes</a></li>
+                        <li><a href="#" data-category="mobiles">Mobiles</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="account-options">
+            <button id="sign-in-button">Sign In</button>
+            <button id="sign-up-button">Sign Up</button>
+        </div>
+    </header>
+
+    <div id="content">
+        <h2>Sell Your Product</h2>
+        <form id="sell-form">
+            <h2>Sell a Product</h2>
+            <label for="product-name">Product Name:</label>
+            <input type="text" id="product-name" required>
+            
+            <label for="product-price">Price:</label>
+            <input type="number" id="product-price" required>
+            
+            <label for="product-description">Description:</label>
+            <textarea id="product-description" required></textarea>
+            
+            <!-- Add an input field for image upload -->
+            <label for="product-image">Product Image:</label>
+            <input type="file" id="product-image" accept="image/*" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
